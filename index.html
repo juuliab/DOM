@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1</title>
+</head>
+    <body>
+        <img src="img/1.jpg" alt="" class="img1">
+        <p></p>
+        <input type="text" id="txt" placeholder="URL картинки">
+        <input type="button" value="Изменить картинку!" id="btn">
+        <p></p>
+        <a href="ex2.html">Задание 2</a>
+        <a href="ex3.html">Задание 3</a>
+        <a href="ex4.html">Задание 4</a>
+        <a href="ex5.html">Задание 5</a>
+        <script>
+            document.querySelector("#btn").onclick=function(){
+                document.querySelector(".img1").src=document.querySelector("#txt").value;
+            }
+        </script>
+    </body>
+</html>

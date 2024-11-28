@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2</title>
+</head>
+    <body>
+        <input type="button" value="Наведи!" id="btn">
+        <p></p>
+        <a href="index.html">Задание 1</a>
+        <a href="ex3.html">Задание 3</a>
+        <a href="ex4.html">Задание 4</a>
+        <a href="ex5.html">Задание 5</a>
+        <script>
+            let btn=document.getElementById("btn");
+            let defText=btn.value;
+            btn.onmouseover=function(){
+                btn.value="Убери!";
+            }
+            btn.onmouseout=function(){
+                btn.value=defText;
+            }
+        </script>        
+    </body>
+</html>

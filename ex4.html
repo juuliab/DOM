@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4</title>
+</head>
+    <body>
+        <input type="text" id="thickness" placeholder="Толщина (указать ед.изм.)">
+        <input type="text" id="color" placeholder="Цвет">
+        <input type="button" value="Изменить!" id="btn">
+        <p></p>
+        <table id="table" border="1" width=100% height=30%>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+        <p></p>
+        <a href="index.html">Задание 1</a>
+        <a href="ex2.html">Задание 2</a>
+        <a href="ex3.html">Задание 3</a>
+        <a href="ex5.html">Задание 5</a>
+        <script>
+            let table=document.getElementById("table");
+            document.querySelector("#btn").onclick=function(){
+                table.style.borderWidth=document.getElementById("thickness").value;
+                table.style.borderColor=document.getElementById("color").value;
+                table.style.borderStyle="solid";
+            }
+        </script>        
+    </body>
+</html>

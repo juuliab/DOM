@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+</head>
+    <body>
+        <input type="text" id="txtColor" placeholder="Цвет текста">
+        <input type="text" id="bgColor" placeholder="Цвет фона">
+        <input type="button" value="Изменить!" id="btn">
+        <p></p>
+        <div>Текст</div>
+        <p></p>
+        <a href="index.html">Задание 1</a>
+        <a href="ex2.html">Задание 2</a>
+        <a href="ex4.html">Задание 4</a>
+        <a href="ex5.html">Задание 5</a>
+        <script>
+            document.querySelector("#btn").onclick=function(){
+                let elem=document.querySelector("div");
+                elem.style.color=document.querySelector("#txtColor").value;
+                elem.style.backgroundColor=document.querySelector("#bgColor").value;
+                /* изменяет цвет всей страницы и ее содержимого
+                document.body.style.color=document.querySelector("#txtColor").value;
+                document.body.style.backgroundColor=document.querySelector("#bgColor").value;
+                */
+            }
+        </script>        
+    </body>
+</html>
